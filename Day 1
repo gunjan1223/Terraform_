@@ -1,7 +1,6 @@
 📌 1. What is Terraform?
 
 Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp.
-
 It allows us to provision, manage, and modify infrastructure using configuration files instead of manually creating resources through cloud provider consoles.
 
 Key Highlights:
