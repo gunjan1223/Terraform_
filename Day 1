@@ -1,82 +1,40 @@
-📌 1. What is Terraform?
+##📌 1. What is Terraform?
 
 Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp.
 It allows us to provision, manage, and modify infrastructure using configuration files instead of manually creating resources through cloud provider consoles.
 
-Key Highlights:
-
+#Key Highlights:
 Uses HCL (HashiCorp Configuration Language) to define infrastructure.
-
 Automates infrastructure provisioning.
-
 Supports multiple cloud providers and platforms.
-
 Helps maintain consistent infrastructure configurations.
 
-Supported Providers:
+#Supported Providers:
+1️⃣ AWS
+2️⃣ Azure
+3️⃣ Microsoft Azure
+4️⃣ GCP
+5️⃣ Kubernetes
 
-Provider
-
-Platform
-
-AWS
-
-Amazon Web Services
-
-Azure
-
-Microsoft Azure
-
-GCP
-
-Google Cloud Platform
-
-Kubernetes
-
-Container orchestration
-
-⚙️ 2. Basic Terraform Workflow
+##⚙️ 2. Basic Terraform Workflow
 
 Terraform follows five important steps to manage infrastructure:
 
-Step
-
-Description
-
-📝 Write
-
+**Description**
 Create Terraform configuration files (.tf).
-
-🔧 Initialize
-
 Download required providers and initialize the working directory.
-
-📋 Plan
-
 Preview infrastructure changes before execution.
-
-🚀 Apply
-
 Create or modify infrastructure resources.
-
-🗑️ Destroy
-
 Remove Terraform-managed infrastructure when required.
 
 Terraform Workflow:
-
 Write → Init → Plan → Apply → Destroy
 
-🎯 3. Key Learnings
+##🎯 3. Key Learnings
 
 ✅ Understood the concept of Infrastructure as Code (IaC).
-
 ✅ Learned what Terraform is and why it is used.
-
 ✅ Explored real-world Terraform use cases.
-
 ✅ Understood Terraform providers and resources.
-
 ✅ Learned the basic Terraform workflow.
-
 ✅ Explored important Terraform commands and file extensions.
