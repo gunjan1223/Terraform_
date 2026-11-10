@@ -1,0 +1,30 @@
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# SSH Private Keys
+*.pem
+*.ppk
+*.key
+terra-key-ec2
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Sensitive local configuration
+terraform.rc
+.terraformrc
+.terraform.lock.hcl
+
+# VS Code settings (optional)
+.vscode/
