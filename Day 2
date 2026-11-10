@@ -1,0 +1,52 @@
+📌 1. Understanding Terraform Providers
+
+A Terraform provider is a plugin that allows Terraform to interact with cloud platforms and external services.
+Providers help Terraform communicate with AWS, Azure, GCP, Kubernetes, and other platforms.
+
+Key Highlights:
+1️⃣ Providers enable Terraform to manage infrastructure.
+2️⃣ Providers contain resource and data source definitions.
+3️⃣ Each provider has its own version and configuration.
+4️⃣ Terraform downloads the required provider plugins during initialization.
+
+Example – Required Providers:
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.0"
+    }
+  }
+}
+
+Example – AWS Provider Configuration:
+provider "aws" {
+  region = "ap-south-1"
+}
+
+📂 2. Understanding Terraform Configuration Files
+Learned how to organize Terraform configuration using different .tf files.
+1️⃣ main.tf --> Defines infrastructure resources such as EC2.
+2️⃣ providers.tf --> Contains AWS provider configuration.
+3️⃣ terraform.tf --> Contains Terraform settings and required provider declarations.
+
+🎯 3. Key Learnings
+✅ Understood Terraform providers.
+✅ Learned the difference between required_providers and provider blocks.
+✅ Understood provider source and version constraints.
+✅ Learned how to organize Terraform configuration into multiple files.
+✅ Understood the purpose of main.tf, providers.tf, and terraform.tf.
+✅ Successfully provisioned an AWS EC2 instance using Terraform.
+✅ Gained hands-on experience with Terraform infrastructure deployment.
+
+🛠️ 4. Hands-on Practical – AWS EC2 Creation
+Today, I successfully created an AWS EC2 instance using Terraform.
+
+Practical Activities:
+Configured the AWS provider.
+Defined required providers and version constraints.
+Organized Terraform configuration into multiple files.
+Created an EC2 instance resource.
+Initialized the Terraform working directory.
+Reviewed infrastructure changes using Terraform Plan.
+Applied the configuration to provision the EC2 instance.
