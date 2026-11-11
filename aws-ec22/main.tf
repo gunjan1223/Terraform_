@@ -47,15 +47,17 @@ resource aws_security_group "My_security_group" {
 
 #EC2 instance creation
 resource "aws_instance" "WebServer" {
+    count = 2
    key_name = aws_key_pair.my_key.key_name
    security_groups = [aws_security_group.My_security_group.name]
-   instance_type = "t2.micro"
-   ami = "ami-0f3380f4b6e8b9dd0"
+   instance_type = var.ec2_instance_type
+   ami = var.ami_id
 
    root_block_device {
-     volume_size = 10
+     volume_size = var.root_block_device
      volume_type = "gp3"
    }
+
    tags = {
      Name = "MyServer"
    }

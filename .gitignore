@@ -16,6 +16,8 @@ terraform.tfstate.backup
 # Credentials and secrets
 .env
 .env.*
+**/.env
+**/.env.*
 *.pem
 *.key
 *_rsa
